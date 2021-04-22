@@ -1,0 +1,19 @@
+.layout {
+  background-color: black;
+  padding-bottom: 2rem;
+}
+.caraousel-height {
+  height: 50rem;
+}
+
+img {
+  height: 50rem;
+}
+@media screen and (min-width: 800px) {
+  .caraousel-height {
+    height: 25rem;
+  }
+  img {
+    height: 25rem;
+  }
+}
