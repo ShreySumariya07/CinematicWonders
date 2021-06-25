@@ -46,23 +46,20 @@ const Details = (props) => {
                                             </div>
                                         </Row>
                                         <Row>
-                                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                                <div style={{margin:'1rem'}}>
-                                                    <Button style={{backgroundColor:'transparent',color:'red',borderRadius:'0.2rem',border:'solid red'}}>
-                                                        Add to wishList
-                                                    </Button>
-                                                </div>
-                                                <div style={{margin:'1rem'}}>
-                                                    <Button style={{backgroundColor:'transparent',color:'blue',borderRadius:'0.2rem',border:'solid blue'}} onClick={props.hideModal} >
-                                                        Close
-                                                    </Button>
-                                                </div>
-                                                <div style={{margin:'1rem'}}>
-                                                    <Button style={{backgroundColor:'transparent',color:'green',borderRadius:'0.2rem',border:'solid green'}} >
-                                                        <a href={`https://www.youtube.com/watch?v=${props.trailer.key}`} alt="#" target="__blank" style={{textDecoration:'none',color:'green'}}>Watch Trailer</a>
-                                                    </Button>
-                                                </div>
-                                            </div>
+                                            <Col md={4} xs={12} >
+                                                <Button style={{backgroundColor:'transparent',color:'red',borderRadius:'0.2rem',border:'solid red'}}>
+                                                    AddToList
+                                                </Button>
+                                            </Col>
+                                            <Col md={4} xs={12} >
+                                                <Button style={{backgroundColor:'transparent',color:'blue',borderRadius:'0.2rem',border:'solid blue'}} onClick={props.hideModal} >
+                                                    Close
+                                                </Button>
+                                            </Col>
+                                            <Col md={4} xs={12}>
+                                                
+                                                    {props.trailer ? <Button style={{backgroundColor:'transparent',color:'green',border:'solid green',borderRadius:'0.3rem'}}><a href={`https://www.youtube.com/watch?v=${props.trailer.key}`} alt="#" target="__blank" style={{textDecoration:'none',color:'green'}}>Trailer</a></Button> : <Button style={{backgroundColor:'transparent',color:'green',border:'solid transparent'}}><div style={{backgroundColor:'transparent',border:"solid transparent",borderRadius:'0rem',color:'green'}}>NoTrailer</div></Button>}
+                                            </Col>
                                         </Row>
                             </Container>
                         </Modal.Body>
