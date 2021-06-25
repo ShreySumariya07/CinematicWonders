@@ -1,0 +1,46 @@
+.home-title {
+  background-color: black;
+  padding: 1rem;
+}
+.home-title-written {
+  color: azure;
+  padding-left: 1.5rem;
+}
+
+.icon-effect {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  opacity: 1;
+  z-index: 1;
+  color: azure;
+  background-color: rgba(0, 0, 0, 0.849);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(83, 82, 81);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
